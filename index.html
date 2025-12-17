@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema de Evaluación de Estudiantes</title>
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body class="bg-light">
+
+  <div class="container my-3">
+    <h1 class="text-center mb-4 bg-primary text-white">Sistema de Evaluación de Estudiantes</h1>
+    <div class="card shadow-sm mb-3">
+      <div class="card-header bg-success text-white fw-bold text-center">Resumen de las Calificaciones</div>
+      <div class="card-body">
+        <p id="aprobados" class="fw-semibold text-center"></p>
+        <p id="supletorios" class="fw-semibold text-center"></p>
+        <p id="reprobados" class="fw-semibold text-center"></p>
+      </div>
+    </div>
+    <div class="card shadow-sm">
+      <div class="card-header bg-success text-white fw-bold text-center">Promedio del Curso</div>
+      <div class="card-body">
+        <p id="promedio" class="fw-semibold text-center"></p>
+        <p id="estado" class="fw-semibold text-center"></p>
+      </div>
+    </div>
+  </div>
+
+<div class="container mb-3">
+  <div class="row">
+    <div class="col-6">
+      <h3 class="text-center mb-4 bg-primary text-white">Notas</h3>
+      <ul id="columna1" class="list-group list-group-flush"></ul>
+    </div>
+    <div class="col-6">
+      <h3 class="text-center mb-4 bg-primary text-white">Estado</h3>
+      <ul id="columna2" class="list-group list-group-flush"></ul>
+    </div>
+  </div>
+</div>
+
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./public/js/sistema_calificaciones.js"></script>
+</body>
+</html>
